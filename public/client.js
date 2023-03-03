@@ -1,5 +1,5 @@
 var socket;
-socket = io.connect("http://localhost:3000/");
+socket = io.connect("https://test-websocket-animation.onrender.com/");
 
 var settings = {
     start: 0,
