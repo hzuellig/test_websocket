@@ -1,0 +1,107 @@
+/*css code*/
+
+body {
+    background-color: black;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+svg {
+    position: absolute;
+    stroke: none;
+    fill: none;
+    stroke-width: 0.1rem;
+}
+
+circle {
+    transform-origin: center;
+    /*animation-name: rotating-circles; */
+    animation-duration: 10s;
+    animation-iteration-count:1;
+}
+
+svg circle:nth-child(12) {
+    animation-delay: .1s;
+}
+
+svg circle:nth-child(11) {
+    animation-delay: .2s;
+}
+
+svg circle:nth-child(10) {
+    animation-delay: .3s;
+}
+
+svg circle:nth-child(9) {
+    animation-delay: .4s;
+}
+
+svg circle:nth-child(8) {
+    animation-delay: .5s;
+}
+
+svg circle:nth-child(7) {
+    animation-delay: .6s;
+}
+
+svg circle:nth-child(6) {
+    animation-delay: .7s;
+}
+
+svg circle:nth-child(5) {
+    animation-delay: .8s;
+}
+
+svg circle:nth-child(4) {
+    animation-delay: .9s;
+}
+
+svg circle:nth-child(3) {
+    animation-delay: 1s;
+}
+
+svg circle:nth-child(2) {
+    animation-delay: 1.1s;
+
+}
+
+svg circle:nth-child(1) {
+    animation-delay: 1.2s;
+
+}
+
+@keyframes rotating-circles {
+    0% {
+        transform: rotate(0deg) scale(1.5) scaleX(0);
+        transform-origin: left;
+        stroke: white;
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: rotate(180deg) scale(1.5) scaleX(1);
+        transform-origin: center;
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: rotate(945deg) scale(0.75) scaleX(0.25);
+        transform-origin: center;
+        opacity: 1;
+    }
+
+    75% {
+        transform: rotate(450deg) scale(1) scaleX(1);
+        transform-origin: center;
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: rotate(720deg) scale(1.5) scaleX(0);
+        transform-origin: right;
+        stroke: white;
+        opacity: 0.5;
+    }
+}
